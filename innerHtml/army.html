@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndianArmy</title>
+    <link href='https://fonts.googleapis.com/css?family=Metal Mania' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rakkas' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Gemunu Libre' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+@media screen and (min-width:1400px){
+        .back {
+            width: 100%;
+            background-color: #a4aa88;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -20;
+        }
+
+        .back h1 {
+            font-size: 70px;
+            text-align: center;
+            padding-top: 100px;
+            font-family: 'Metal Mania';
+        }
+
+        .back p {
+            font-size: 19px;
+            text-align: center;
+            padding: 30px 150px;
+            font-family: 'Rakkas';
+        }
+
+        .details {
+            background: linear-gradient(147deg, #4b5320, #20361c);
+            position: relative;
+            top: 550px;
+            height: 4050px;
+            border-radius: 50% 50% 0 0/ 3% 3% 0 0;
+        }
+
+        .details h1 {
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'Galada';
+            font-size: 50px;
+            text-shadow: 0px 0px 10px rgba(212, 255, 0, 0.3);
+            color: black;
+        }
+
+        .details h4 {
+            padding-top: 15px;
+            font-family: 'Alegreya SC';
+            font-size: 25px;
+            color: black;
+        }
+
+        .details p {
+            font-family: 'Gemunu Libre';
+            font-size: 16px;
+            padding: 0px 15px;
+            color: black;
+        }
+
+        .details img {
+            width: 550px;
+            height: 288px;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            box-shadow: 0px 5px 15px #0000008a;
+        }
+
+        .armyguns {
+            width: 650px;
+            margin-top: 90px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .guns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+        .tanks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+        .artanks {
+            width: 650px;
+            margin-top: 90px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        .container a i{
+            margin-left: 40px;
+    margin-top: 30px;
+    width: 40px;
+        }
+    }
+    @media(max-width:1400px) and (min-width:1100px){
+        .back {
+            width: 100%;
+            background-color: #a4aa88;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -20;
+        }
+
+        .back h1 {
+            font-size: 65px;
+    text-align: center;
+    padding-top: 60px;
+    font-family: 'Metal Mania';
+        }
+
+        .back p {
+            font-size: 18px;
+            text-align: center;
+            padding: 30px 150px;
+            font-family: 'Rakkas';
+        }
+
+        .details {
+            background: linear-gradient(147deg, #4b5320, #20361c);
+            position: relative;
+            top: 550px;
+            height: 100%;
+            border-radius: 50% 50% 0 0/ 3% 3% 0 0;
+            padding-bottom: 50px;
+        }
+
+        .details h1 {
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'Galada';
+            font-size: 50px;
+            text-shadow: 0px 0px 10px rgba(212, 255, 0, 0.3);
+            color: black;
+        }
+
+        .details h4 {
+            padding-top: 15px;
+            font-family: 'Alegreya SC';
+            font-size: 25px;
+            color: black;
+        }
+
+        .details p {
+            font-family: 'Gemunu Libre';
+            font-size: 16px;
+            padding: 0px 15px;
+            color: black;
+        }
+
+        .details img {
+            width: 550px;
+            height: 288px;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            box-shadow: 0px 5px 15px #0000008a;
+        }
+
+        .armyguns {
+            width: 650px;
+            margin-top: 90px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .guns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+        .tanks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+        .artanks {
+            width: 650px;
+            margin-top: 90px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        .container a i{
+            margin-left: 40px;
+    margin-top: 30px;
+    width: 40px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+   
+    <div class="container">
+        <a href="../index.html"><i class="fa-solid fa-house" style="color:black;" ></i></a>
+        <div class="back">
+
+            <h1>INDIAN ARMY</h1>
+            <div>
+                <p>The Indian Army is the land-based branch and the largest component of the Indian Armed Forces. The
+                    Indian Army originated from the armies
+                    of the East India Company, which eventually became the British Indian Army, and the armies of the
+                    princely
+                    states, which were merged into the national army after independence. The units and regiments of the
+                    Indian
+                    Army have diverse histories and have participated in several battles and campaigns around the world,
+                    earning
+                    many battle and theatre honours before and after Independence.
+
+                    The primary mission of the Indian Army is to ensure national security and national unity, to defend
+                    the
+                    nation from external aggression and internal threats, and to maintain peace and security within its
+                    borders.
+                    It conducts humanitarian rescue operations during natural calamities and other disturbances. It is a
+                    major component of national power, alongside the Indian Navy and the Indian Air Force.
+
+                    The Indian Army is operationally and geographically divided into seven commands, with the basic
+                    field
+                    formation being a division. Below the division level are permanent regiments that are responsible
+                    for their
+                    own recruiting and training. The army is an all-volunteer force and comprises more than 80% of the
+                    country's
+                    active defence personnel. It is the largest standing army in the world,with 1,237,117 active
+                    troops and 960,000 reserve troops. The army has embarked on an infantry modernisation program known
+                    as Futuristic Infantry Soldier As a System (F-INSAS), and is also upgrading and acquiring new assets
+                    for its
+                    armoured, artillery, and aviation branches.</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="details">
+        <h1>Glory</h1>
+        <div class="guns">
+
+            <div class="second armyguns">
+                <h4>SAF Carbine</h4>
+                <br>
+                <img src="../image/carbin.png">
+                <br>
+                <p>Carbine is a long gun that has a barrel shortened from its original length.
+                    Most modern carbines are rifles that are compact versions of a longer rifle
+                    or are rifles chambered for less powerful cartridges.
+                    The smaller size and lighter weight of carbines make them easier to handle.
+                </p>
+            </div>
+            <div class="fourth armyguns">
+                <h4>1B1 Insas</h4>
+                <br>
+                <img src="../image/EdrfnsOU4AEAMlI.jpg">
+                <br>
+                <p>Indian Small Arms System(INSAS) is a family of infantry arms consisting
+                    of an assault rifle and a light machine gun (LMG). It was manufactured by the Ordnance Factories
+                    Board at its various factories.The INSAS assault rifle was the standard infantry
+                    weapon of the Indian Armed Forces for almost three decades.
+                </p>
+            </div>
+            <div class="first armyguns">
+
+                <h4>AK 203</h4>
+                <br>
+                <img src="../image/AK-203-Rifle.jpg">
+                <br>
+                <p>The AK-203 is a Russian gas-operated, magazine-fed, select fire assault rifle designed to chamber
+                    the 7.62×39mm cartridge. It is one of the latest iterations of the AK series of assault rifles
+                    originally
+                    designed by Mikhail Kalashnikov. The AK-203 was developed in the 2010s by Kalashnikov Concern in
+                    Russia.
+                    The firearm was originally known as AK-103M before being renamed to AK-203 in 2019.
+                </p>
+            </div>
+            <div class="third armyguns">
+
+                <h4>Dragunov SVD</h4>
+                <br>
+                <img src="../image/1200px-SVD_Dragunov.jpg">
+                <br>
+                <p>The SVD-63 , is a semi-automatic marksman rifle chambered in 7.62×54mmR, developed in the Soviet
+                    Union.
+                    The SVD was designed to serve a novel squad support role to provide precise long-range engagement
+                    capabilities
+                    to ordinary troops following the adoption of intermediate calibers for use in standard infantry
+                    rifles.
+                </p>
+            </div>
+
+            <div class="fifth armyguns">
+
+                <h4>Multi Grenade Launcher</h4>
+                <br>
+                <img src="../image/40mm-multiple-grenade-launcher-mark-1s.webp">
+                <br>
+                <p>The Milkor MGL (Multiple Grenade Launcher) is a lightweight 40 mm six-shot revolver-type grenade
+                    Launcher
+                    developed and manufactured in South Africa by Milkor Ltd. The MGL was demonstrated as a concept to
+                    the South African Defence Force in 1981. The MGL was then officially accepted into service with the
+                    SADF
+                    as the Y2. After its introduction in 1983, the MGL was gradually adopted by the armed forces and law
+                    enforcement organizations of over 50 countries.
+                </p>
+            </div>
+            <div class="sixth armyguns">
+
+                <h4>Denel NTW 20</h4>
+                <br>
+                <img src="../image/Denel-NTW-20-image_1.webp">
+                <br>
+                <p>The NTW-20 is a South African anti-materiel rifle, developed by Denel Mechem in the 1990s. It is
+                    intended
+                    for deployment against targets including parked aircraft, telecommunication masts, power lines,
+                    missile sites,
+                    radar installations, refineries, satellite dishes, gun emplacements, bunkers, and personnel, using a
+                    range of specialised projectiles.
+                    As with other weapons of this type, it can also be used for counter sniping and ordnance disposal
+                </p>
+            </div>
+        </div>
+        <div class="tanks">
+            <div class="ftan artanks">
+                <h4> Arjun</h4>
+                <br>
+                <img src="../image/arjun.webp">
+                <br>
+                <p>The Arjun is a third generation main battle tank developed by the Combat
+                    Vehicles Research and Development Establishment (CVRDE) of the Defence Research and Development
+                    Organisation (DRDO), for the Indian Army.The tank is named after Arjuna, the archer prince
+                    who is the main protagonist of the Indian epic poem Mahabharata.</p>
+
+            </div>
+            <div class="stan artanks">
+                <h4> T-72 Ajeya</h4>
+                <br>
+                <img src="../image/T-72-Ajeya-Tank-of-The-Indian-Army-min.jpg">
+                <br>
+                <p>Ajeya tank is the modernized version of T-72. The tank capability was enhanced with Global 
+                    Positioning System (GPS), Explosive Reactive Armour (ERA) and Integrated Fire Detection and
+                     Suppression System (IFDSS) to the level of contemporary combat vehicles. The upgradation of 
+                     the tank is being done by HVF, based on CVRDE design and issued to the Army for use.</p>
+
+            </div>
+            <div class="ttan artanks">
+                <h4>T-90 Bhishma</h4>
+                <br>
+                <img src="../image/t-90-ani.jpg">
+                <br>
+                <p>The T-90 is a third-generation Russian main battle tank. It uses a 125 mm 2A46 smoothbore main gun, the 1A45T fire-control system, an upgraded engine, and gunner's thermal sight. Standard protective measures include a blend of steel and composite armour, smoke grenade dischargers, Kontakt-5 explosive-reactive armour and the Shtora infrared ATGM jamming system</p>
+
+            </div>
+            <div class="ftan artanks">
+                <h4>BMP-2 Sarath</h4>
+                <br>
+                <img src="../image/BMP-2_Sarath-U.S.-Army-photo-by-Fred-W.-Baker-III..jpg">
+                <br>
+                <p>is the best infantry combact vehicles in the world with modern weapon systems.It is ideal for fighting battles with speed, surprise and deadly precision.
+
+                    Powered by 300 HP Engine, it is a highly mobile to meet all tactical requirementsf of mobility in a battlefield, travels at an incredible 65 KMPH, with easy steering ability in cross country terrain.</p>
+
+            </div>
+            <div class="fmiss artanks">
+                <h4>Agni</h4>
+                <br>
+                <img src="../image/Agni-V.jpg">
+                <br>
+                <p>The Agni missile is a family of medium to intercontinental range ballistic missiles developed by India, named after one of the five elements of nature.
+                     Agni missiles are long range, nuclear weapons capable, surface to surface ballistic missiles. 
+                     The first missile of the series, Agni-I was developed under the Integrated Guided Missile Development Program (IGMDP) and tested in 1989.</p>
+            </div>
+            <div class="fmiss artanks">
+                <h4>Brahmos</h4>
+                <br>
+                <img src="../image/brahmos_tass_4782974_b.jpg">
+                <p>The BrahMos is a medium-range stealth ramjet supersonic cruise missile that can be launched from submarine, ships, aircraft or land, notably being the fastest supersonic cruise missile in the world. It is a joint-venture between the Indian Defence Research and Development Organisation (DRDO) and the Russian Federation's NPO Mashinostroyeniya, who together have formed BrahMos Aerospace.</p>
+            </div>
+            <div class="fmiss artanks">
+                <h4>Prithvi</h4>
+                <br>
+                <img src="../image/prithvi-missile.jpg">
+                <br>
+                <p>Prithvi is a tactical surface-to-surface short-range ballistic missile (SRBM) developed by Defence Research and Development Organisation (DRDO) of India under the Integrated Guided Missile Development Program (IGMDP). It is deployed by India's Strategic Forces Command.</p>
+            </div>
+
+            <div class="fmiss artanks">
+                <h4>Nirbhay</h4>
+                <br>
+                <img src="../image/dhanush-missile.jpg">
+                <br>
+                <p>Nirbhay is a long range, all-weather, subsonic cruise missile designed and developed in India by the Aeronautical Development Establishment (ADE) which is under Defence Research and Development Organisation (DRDO). The missile can be launched from multiple platforms and is capable of carrying conventional and nuclear warheads.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndianArmedForces</title>
+    <link href='https://fonts.googleapis.com/css?family=BioRhyme Expanded' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        @media screen and (min-width:1490px) {
+        .container{           
+            height: 100vh;
+            background-image: linear-gradient(120deg, #ff9933, #ffffff, #138808);
+            position: fixed;
+            width: 100%;
+        }
+        .main-heading{
+            font-size: 35px;
+            display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    padding-bottom: 10px;
+    font-family: 'BioRhyme Expanded';
+        }
+        .types{
+            display: flex;
+            margin-left: -10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 80px;
+           font-family: 'Galada';
+        }
+        .air-force{
+            position: relative;
+    width: 475px;
+    height: 320px;
+    border-radius: 20px;
+    transition: .3s;
+    /* padding: 30px 20px; */
+    background: radial-gradient(#cd9c6b, transparent);
+    box-shadow: 0px 0px 15px black;
+    
+        }
+        .air-force:hover{
+            padding-bottom: 100px;
+            transition: 0.4s;
+            
+        }
+        .air-force:hover>.content p{
+            transition: .3s;
+            transform: translateY(-95px);
+            opacity:100%;
+            
+        }
+        .air-force:hover>.air-img img{
+            transition: .3s;
+            height: 270px;
+            width: 480px;
+            transform: translateX(-27px);
+        }
+        .air-img{
+            position: relative;
+    height: 100%;
+    width: 90%;
+    transform: translateX(25px);
+    transform: translateY(-40px);
+    padding-left: 25px;
+ 
+        }
+        .air-img img{
+            height: 250px;
+            border-radius: 20px;
+            transition: .3s;
+            box-shadow: 0px 5px 15px #000000c4;
+        }
+        .navy{
+            position: relative;
+            width: 475px;
+    height: 320px;
+            border-radius: 20px;
+            transition: .3s;
+            /* padding: 30px 20px; */
+            background: radial-gradient(#728692, transparent);
+            margin-left: 30px;
+            box-shadow: 0px 0px 15px black;
+        }
+        .navy:hover{
+            padding-bottom: 100px;
+            transition: 0.4s;
+
+        }
+        .navy:hover>.content p{
+            transition: .2s;
+            transform: translateY(-95px);
+            opacity:100%;
+        }
+        .navy:hover>.navy-img img{
+            transition: .3s;
+            height: 270px;
+            width: 480px;
+            transform: translateX(-27px);
+        }
+        .navy-img{
+            position: relative;
+    height: 100%;
+    width: 90%;
+    padding-left: 25px;
+    transform: translateY(-40px);
+   
+        }
+        .navy-img img{
+            height: 250px;
+            border-radius: 20px;
+            transition: .3s;
+            box-shadow: 0px 5px 15px #000000c4;
+        }
+        .army{
+            position: relative;
+            width: 475px;
+    height: 320px;
+            border-radius: 20px;
+            transition: .3s;
+            /* padding: 30px 20px; */
+            background: radial-gradient(#839a83, transparent);
+            margin-left: 30px;
+            box-shadow: 0px 0px 15px black;
+
+        }
+        .army:hover{
+           
+            padding-bottom: 100px;
+            transition: 0.4s;
+
+        }
+        .army:hover>.content p{
+            transition: .2s;
+            transform: translateY(-95px);
+            opacity:100%;
+        }
+        .army:hover>.army-img img{
+            transition: .3s;
+            height: 270px;
+            width: 480px;
+            transform: translateX(-27px);
+        }
+        .army-img{
+            position: relative;
+            height: 100%;
+            width: 90%;
+            padding-left: 25px;
+            transform: translateY(-40px);
+         
+        }
+        .army-img img{
+            height: 250px;
+            border-radius: 20px;
+            transition: .3s;
+            box-shadow: 0px 5px 15px #000000c4;
+        }
+        img{
+            width: 100%;
+            /* z-index: -2; */
+        }
+        .content{
+            text-align: center;
+            padding: 20px 30px;
+            color: black;
+            /* z-index: -1;     */
+            
+        }
+        .content h2{
+            transform: translateY(-100px);
+        }
+        .content p{
+            opacity: 0;
+            transform: translateY(-300px);    
+        }
+        .lessthanlap{
+            display: none;
+        }
+    }
+
+   @media(max-width:1490px) and (min-width:1300px){
+    .container{           
+            height: 100vh;
+            background-image: linear-gradient(120deg, #ff9933, #ffffff, #138808);
+            position: fixed;
+            width: 100%;
+        }
+        .main-heading{
+            font-size: 35px;
+            display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    font-family: 'BioRhyme Expanded';
+        }
+        .types{
+            display: flex;
+            margin-left: 10px;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            padding-top: 50px;
+           font-family: 'Galada';
+        }
+        .air-force{
+            position: relative;
+    width: 430px;
+    height: 280px;
+    border-radius: 20px;
+    transition: .3s;
+    /* padding: 30px 20px; */
+    background: radial-gradient(#cd9c6b, transparent);
+    box-shadow: 0px 0px 15px black;
+    
+        }
+        .air-force:hover{
+            padding-bottom: 70px;
+            transition: 0.4s;
+            
+        }
+        .air-force:hover>.content p{
+            transition: .3s;
+            transform: translateY(-75px);
+            opacity:100%;
+            font-size: 12px;
+            
+        }
+        .air-force:hover>.air-img img{
+            transition: .3s;
+            height: 250px;
+            width: 433px;
+            transform: translateX(-24px);
+        }
+        .air-img{
+            position: relative;
+    height: 100%;
+    width: 90%;
+    transform: translateX(25px);
+    transform: translateY(-40px);
+    padding-left: 22px;
+ 
+        }
+        .air-img img{
+            height: 230px;
+            border-radius: 20px;
+            transition: .3s;
+            box-shadow: 0px 5px 15px #000000c4;
+        }
+        .navy{
+            position: relative;
+            width: 430px;
+    height: 280px;
+            border-radius: 20px;
+            transition: .3s;
+            /* padding: 30px 20px; */
+            background: radial-gradient(#728692, transparent);
+            margin-left: 20px;
+            box-shadow: 0px 0px 15px black;
+        }
+        .navy:hover{
+            padding-bottom: 70px;
+            transition: 0.4s;
+
+        }
+        .navy:hover>.content p{
+            transition: .3s;
+            transform: translateY(-75px);
+            opacity:100%;
+            font-size: 12px;
+        }
+        .navy:hover>.navy-img img{
+            transition: .3s;
+            height: 250px;
+            width: 433px;
+            transform: translateX(-24px);
+        }
+        .navy-img{
+            position: relative;
+    height: 100%;
+    width: 90%;
+    padding-left: 25px;
+    transform: translateY(-40px);
+   
+        }
+        .navy-img img{
+            height: 230px;
+            border-radius: 20px;
+            transition: .3s;
+            box-shadow: 0px 5px 15px #000000c4;
+        }
+        .army{
+            position: relative;
+            width: 430px;
+    height: 280px;
+            border-radius: 20px;
+            transition: .3s;
+            /* padding: 30px 20px; */
+            background: radial-gradient(#839a83, transparent);
+            margin-left: 20px;
+            box-shadow: 0px 0px 15px black;
+
+        }
+        .army:hover{
+           
+            padding-bottom: 70px;
+            transition: 0.4s;
+
+        }
+        .army:hover>.content p{
+            transition: .2s;
+            transform: translateY(-75px);
+            opacity:100%;
+            font-size: 12px;
+        }
+        .army:hover>.army-img img{
+            transition: .3s;
+            height: 250px;
+            width: 433px;
+            transform: translateX(-27px);
+        }
+        .army-img{
+            position: relative;
+            height: 100%;
+            width: 90%;
+            padding-left: 25px;
+            transform: translateY(-40px);
+         
+        }
+        .army-img img{
+            height: 230px;
+            border-radius: 20px;
+            transition: .3s;
+            box-shadow: 0px 5px 15px #000000c4;
+        }
+        img{
+            width: 100%;
+            /* z-index: -2; */
+        }
+        .content{
+            text-align: center;
+            padding: 20px 30px;
+            color: black;
+            /* z-index: -1;     */
+            
+        }
+        .content h2{
+            transform: translateY(-80px);
+            font-size: 17px;
+        }
+        .content p{
+            opacity: 0;
+            transform: translateY(-300px);    
+            font-size: 12px;
+        }
+        .lessthanlap{
+            display: none;
+        }
+   }
+
+   @media(max-width:1300px) and (min-width:1100px){
+    .container{           
+        height: 600px;
+    background-image: linear-gradient(120deg, #ff9933, #ffffff, #138808);
+    display: table-cell;
+    width: 100%;
+        }
+        .main-heading{
+                font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-family: 'BioRhyme Expanded';
+        }
+        .types{
+            display: flex;
+            margin-left: 10px;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            padding-top: 50px;
+           font-family: 'Galada';
+        }
+        .air-force{
+            position: relative;
+    width: 420px;
+    height: 280px;
+    border-radius: 20px;
+    transition: .3s;
+    /* padding: 30px 20px; */
+    background: radial-gradient(#cd9c6b, transparent);
+    box-shadow: 0px 0px 15px black;
+    
+        }
+        .air-force:hover{
+            padding-bottom: 70px;
+            transition: 0.3s;
+            
+        }
+        .air-force:hover>.content p{
+            display: block;
+            transition: .3s;
+            transform: translateY(-75px);
+            opacity:100%;
+            font-size: 12px;
+            
+        }
+        .air-force:hover>.air-img img{
+            transition: .3s;
+            height: 250px;
+            width: 433px;
+            transform: translateX(-24px);
+        }
+        .air-img{
+            position: relative;
+    height: 100%;
+    width: 90%;
+    transform: translateX(25px);
+    transform: translateY(-40px);
+    padding-left: 22px;
+ 
+        }
+        .air-img img{
+            height: 230px;
+            border-radius: 20px;
+            transition: .3s;
+            box-shadow: 0px 5px 15px #000000c4;
+        }
+        .navy{
+            position: relative;
+            width: 420px;
+    height: 280px;
+            border-radius: 20px;
+            transition: .3s;
+            /* padding: 30px 20px; */
+            background: radial-gradient(#728692, transparent);
+            margin-left: 20px;
+            box-shadow: 0px 0px 15px black;
+        }
+        .navy:hover{
+            padding-bottom: 70px;
+            transition: 0.3s;
+
+        }
+        .navy:hover>.content p{
+            display: block;
+            transition: .3s;
+            transform: translateY(-75px);
+            opacity:100%;
+            font-size: 12px;
+        }
+        .navy:hover>.navy-img img{
+            transition: .3s;
+            height: 250px;
+            width: 433px;
+            transform: translateX(-24px);
+        }
+        .navy-img{
+            position: relative;
+    height: 100%;
+    width: 90%;
+    padding-left: 22px;
+    transform: translateY(-40px);
+   
+        }
+        .navy-img img{
+            height: 230px;
+            border-radius: 20px;
+            transition: .3s;
+            box-shadow: 0px 5px 15px #000000c4;
+        }
+        .army{
+            position: relative;
+            width: 420px;
+    height: 280px;
+            border-radius: 20px;
+            transition: .3s;
+            /* padding: 30px 20px; */
+            background: radial-gradient(#839a83, transparent);
+            margin-left: 20px;
+            box-shadow: 0px 0px 15px black;
+
+        }
+        .army:hover{
+           
+            padding-bottom: 70px;
+            transition: 0.3s;
+
+        }
+        .army:hover>.content p{
+            display: block;
+            transition: .2s;
+            transform: translateY(-75px);
+            opacity:100%;
+            font-size: 12px;
+        }
+        .army:hover>.army-img img{
+            transition: .3s;
+            height: 250px;
+            width: 433px;
+            transform: translateX(-27px);
+        }
+        .army-img{
+            position: relative;
+            height: 100%;
+            width: 90%;
+            padding-left: 22px;
+            transform: translateY(-40px);
+         
+        }
+        .army-img img{
+            height: 230px;
+            border-radius: 20px;
+            transition: .3s;
+            box-shadow: 0px 5px 15px #000000c4;
+        }
+        img{
+            width: 100%;
+            /* z-index: -2; */
+        }
+        .content{
+            text-align: center;
+            padding: 20px 30px;
+            color: black;
+            /* z-index: -1;     */
+            
+        }
+        .content h2{
+            transform: translateY(-80px);
+            font-size: 17px;
+        }
+        .content p{
+            opacity: 0;
+            transform: translateY(-300px);    
+            font-size: 12px;
+            display: none;
+        }
+        .lessthanlap{
+            display: none;
+        }
+   }
+    
+        @media(max-width:1100px) and (min-width:10px){
+            .container{
+                display: none;
+            }
+            .lessthanlap{
+                display: block;
+                font-size: 150px;
+                display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lessthanlap">
+        <p>Please open in PC🙏</p>
+    </div>
+<div class="container">
+    <div class="main-heading">
+    <h1 id="main-heading">SHOORVEER</h1>
+    </div>
+
+    <div class="types">
+     
+        <a href="innerHtml/airForce.html" style="text-decoration: none;">
+            <div class="air-force"> 
+           
+                <div class="air-img">
+                    <img src="image/air1.jpg">
+                </div>
+                <div class="content">
+                    <h2>Indian Air Force</h2>
+                    <p>The Indian Air Force (IAF) is the air arm of the Indian Armed Forces. Its complement of personnel and
+                        aircraft assets ranks third amongst the air forces of the world. Its primary mission is to secure
+                        Indian airspace and to conduct aerial warfare during armed conflict.</p>
+                 </div>
+             </div>
+        </a>  
+    
+       <a href="innerHtml/navy.html" style="text-decoration: none;">
+        <div class="navy">
+            <div class="navy-img">
+                <img src="image/navy.jpg">
+            </div>
+            <div class="content">
+                <h2>Indian Navy</h2>
+                <p>The Indian Navy is the naval branch of the Indian Armed Forces.The primary objective of the navy is to safeguard the nation's maritime borders, and in conjunction with
+                    other Armed Forces of the union, act to defeat any threats or aggression against the territory,
+                    people or maritime interests of India.</p>
+             </div>
+         </div>
+        </a>
+       
+        <a href="innerHtml/army.html" style="text-decoration: none;">
+       <div class="army">
+        <div class="army-img">
+            <img src="image/DogE3d.webp">
+        </div>
+        <div class="content">
+            <h2>Indian Army</h2>
+            <p>The Indian Army is the land-based branch and the largest component of the Indian Armed Forces.The primary mission of the Indian Army is to ensure national security and national unity, to defend the
+                nation from external aggression and internal threats, and to maintain peace and security within its borders.</p>
+         </div>
+       </div>
+    </a>
+    </div>
+</div>
+</body>
+</html>

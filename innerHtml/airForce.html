@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air_Force</title>
+    <link href='https://fonts.googleapis.com/css?family=Metal Mania' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rakkas' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Gemunu Libre' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+@media screen and (min-width:1400px){
+        .back {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -20;
+            /* background: #091921; */
+            background-color: #BAE2EE;
+            ;
+        }
+
+        .details {
+            border: 2px solid black;
+        }
+
+        .iaf-head {
+            font-size: 70px;
+            display: flex;
+            justify-content: center;
+            padding-top: 120px;
+            color: #1D213C;
+            text-shadow: 0px 0px 9px royalblue;
+            /* font-family: 'IM Fell Great Primer SC'; */
+            font-family: 'Metal Mania';
+
+        }
+
+        .pHead {
+            font-size: 25px;
+            padding: 40px 250px;
+            text-align: center;
+            color: #1D213C;
+            text-shadow: 0px 0px 9px slateblue;
+            font-family: 'Rakkas';
+
+        }
+
+        .details {
+            position: relative;
+            border-radius:50% 50% 0 0/ 3% 3% 0 0;
+           
+            padding-top: 50px;
+            top: 540px;
+            background: #1D213C;
+            padding-bottom: 50px;
+        }
+
+        .logo img {
+            position: absolute;
+        }
+
+        .logo p {
+            text-align: center;
+            padding: 40px 300px;
+            font-size: 20px;
+        }
+
+        #planehead {
+            text-align: center;
+            font-size: 40px;
+            padding-top: 30px;
+            margin-bottom: -50px;
+            font-family: 'Galada';
+
+        }
+
+        .figplanes {
+            width: 630px;
+            margin-top: 100px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .details h4 {
+            padding-top: 15px;
+            font-family: 'Alegreya SC';
+            font-size: 25px;
+            color: #ffffff;
+        }
+
+        .details p {
+            font-family: 'Gemunu Libre';
+            font-size: 15px;
+            padding: 0px 25px;
+            color: #ffffff;
+        }
+        .details img{
+            margin-bottom: 10px;
+            width: 550px;
+            height: 350px;
+            border-radius: 30px;
+            box-shadow: 0px 5px 15px #0000008a;
+        }
+
+       
+        .planes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+
+        #planehead {
+            color: azure;
+            text-shadow: royalblue 0px 0px 9px;
+            font-size: 50px;
+        }
+
+        #helihead {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 50px;
+            color: azure;
+            text-shadow: 0px 0px 9px royalblue;
+        }
+        .helis {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .fighelis {
+            width: 630px;
+            margin-top: 100px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .container a i{
+            margin-left: 40px;
+    margin-top: 30px;
+    width: 40px;
+        }
+    }
+    @media (max-width:1400px) and (min-width:1100px){
+        .back {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -20;
+            /* background: #091921; */
+            background-color: #BAE2EE;
+            ;
+        }
+
+
+        .iaf-head {
+            font-size: 65px;
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+            color: #1D213C;
+            text-shadow: 0px 0px 9px royalblue;
+            /* font-family: 'IM Fell Great Primer SC'; */
+            font-family: 'Metal Mania';
+
+        }
+
+        .pHead {
+            font-size: 25px;
+            padding: 40px 250px;
+            text-align: center;
+            color: #1D213C;
+            text-shadow: 0px 0px 9px slateblue;
+            font-family: 'Rakkas';
+
+        }
+
+        .details {
+            position: relative;
+            border-radius:50% 50% 0 0/ 3% 3% 0 0;
+           height: 100%;
+            padding-top: 50px;
+            top: 540px;
+            background: #1D213C;
+            padding-bottom: 50px;
+        }
+
+        .logo img {
+            position: absolute;
+        }
+
+        .logo p {
+            text-align: center;
+            padding: 40px 300px;
+            font-size: 20px;
+        }
+
+        #planehead {
+            text-align: center;
+            font-size: 40px;
+            padding-top: 30px;
+            margin-bottom: -50px;
+            font-family: 'Galada';
+
+        }
+
+        .figplanes {
+            width: 630px;
+            margin-top: 100px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .details h4 {
+            padding-top: 15px;
+            font-family: 'Alegreya SC';
+            font-size: 25px;
+            color: #ffffff;
+        }
+
+        .details p {
+            font-family: 'Gemunu Libre';
+            font-size: 15px;
+            padding: 0px 25px;
+            color: #ffffff;
+        }
+        .details img{
+            margin-bottom: 10px;
+            width: 550px;
+            height: 350px;
+            border-radius: 30px;
+            box-shadow: 0px 5px 15px #0000008a;
+        }
+
+       
+        .planes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+
+        #planehead {
+            color: azure;
+            text-shadow: royalblue 0px 0px 9px;
+            font-size: 50px;
+        }
+
+        #helihead {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 50px;
+            color: azure;
+            text-shadow: 0px 0px 9px royalblue;
+        }
+        .helis {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .fighelis {
+            width: 630px;
+            margin-top: 100px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .container a i{
+            margin-left: 40px;
+    margin-top: 30px;
+    width: 40px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../index.html" style="text-decoration: none;"><i class="fa-solid fa-house" style="color:#1D213C ;" ></i></a>
+        <div class="back">
+            <h1 class="iaf-head"> INDIAN AIR FORCE</h1>
+            <p class="pHead">The Indian Air Force is the air arm of the Indian Armed Forces.
+
+                Its complement of personnel and aircraft assets ranks third amongst the air forces of the world.
+                Its primary mission is to secure Indian airspace and to conduct aerial warfare during armed conflict.
+                It was officially established on 8 October 1932 as an auxiliary air force of the British Empire which
+                honoured India's aviation service during
+                World War II with the prefix Royal.
+                After India gained independence from United Kingdom in 1947, the
+                name Royal Indian Air Force was kept and served in the name of Dominion of India. With the government's
+                transition to a Republic in 1950, the prefix Royal was removed.</p>
+        </div>
+        <div class="details">
+            <h2 id="planehead">Glory</h2>
+            <div class="planes">
+                <div class="first figplanes">
+
+                    <h4> Sukhoi Su-30MKI</h4>
+                    <br>
+                    <img src="../image/f895ea77dc7d35fefcc02d37ef25f485.jpg">
+                    <br>
+                    <p>Developed by Russia's Sukhoi and built by India's Hindustan Aeronautics Limited (HAL) for the
+                        Indian Air Force, the Sukhoi Su-30MKI is a twinjet multi-role air superiority fighter. It is a
+                        heavy fighter that can operate in any environment and over great distances. It is a derivative
+                        of the Sukhoi Su-30. Designed to meet Indian criteria, the aircraft incorporates Indian systems
+                        and avionics, along with components from France and Israel.
+                    </p>
+                </div>
+                <div class="second figplanes">
+
+                    <h4> Dassault Mirage 2000</h4>
+                    <br>
+                    <img src="../image/mirage.jpg">
+                    <br>
+                    <p>The Dassault Mirage 2000 is a French multirole, single-engine, fourth-generation jet fighter
+                        manufactured by Dassault Aviation and operated by many countries around the world. In response
+                        to Pakistan purchasing Lockheed Martin-made F-16 fighter planes, India ordered 36 single-seat
+                        Mirage-2000 and 4 twin-seat Mirage 2000 in 1982. As a result of the victory against Pakistan in
+                        the Kargil war, India bought an additional 10 Mirage 2000 fighter jets.
+                    </p>
+                </div>
+                <div class="third figplanes">
+                    <h4> Dassault Rafale</h4>
+                    <br>
+                    <img src="../image/Rafale-Jet-4.webp">
+                    <br>
+                    <p>The Dassault Rafale is a French multirole fighter aircraft that is developed and manufactured by
+                        Dassault Aviation. It has a canard delta wing desing and is powered by twin Snecma M88 engines.
+                        The Rafale was one of the six aircraft participating in the Indian MRCA competition for 126
+                        multirole fighters. Currently, Dassault Rafale is the most sophisticated fighter aircraft of the
+                        Indian Air force and India deploys 36 fighters.</p>
+                </div>
+                <div class="fourth figplanes">
+                    <h4> Mikoyan-Gurevich MiG-29</h4>
+                    <br>
+                    <img src="../image/jet-fighters-mikoyan-mig-29-aircraft-jet-fighter-warplane-hd-wallpaper-preview.jpg">
+                    <br>
+                    <p>The Soviet Union developed MiG-29, a twin-engine fighter aircraft, in the 1970s. The MiG-29's
+                        first overseas client was the Indian air force. The aircraft has received several upgrades,
+                        including the installation of new avionics, subsystems, engines, and radars. India's Air Force
+                        deployed Indian MiG-29s extensively in the 1999 Kargil War in Kashmir as fighter escorts for
+                        Mirage 2000s using laser-guided bombs to strike targets.</p>
+                </div>
+                <div class="fifth figplanes">
+                    <h4>HAL Tejas</h4>
+                    <br>
+                    <img src="../image/tejas.jpg">
+                    <br>
+                    <p> Developed by the Aeronautical Development Agency (ADA) and Hindustan Aeronautics Limited (HAL),
+                        the HAL Tejas is an Indian, single-engine, delta wing, light multi-role fighter built for the
+                        Indian Air Force . The IAF has placed an order for 40 Tejas Mark 1 and 83 Tejas Mark 1A, as well
+                        as Tejas trainer aircraft.</p>
+                </div>
+                <div class="sixth figplanes">
+
+                    <h4> SEPECAT Jaguar</h4>
+                    <br>
+                    <img src="../image/jaguar.jpg">
+                    <br>
+                    <p>The SEPECAT Jaguar is a twin-jet attack aircraft that was developed jointly by the United Kingdom
+                        and France and had its first flight in 1968. 1978 was the year when IAF became the single
+                        biggest buyer. The deal included the construction of 40 Jaguars in Europe as well as the
+                        license-building of 120 aircraft by Hindustan Aeronautics Limited (HAL).</p>
+                </div>
+            </div>
+
+            <div id="heli">
+            </div>
+            <div class="helis">
+                <div class="fir fighelis">
+                    <h4> Mil MI-17 V5</h4>
+                    <br>
+                    <img src="../image/mi-17.jpg">
+                    <br>
+                    <p>IAF has long been using the chopper to transport VVIPs like Gen Rawat and even Prime Minister of
+                        India. The MI-17 V5 is a domesticated version of the Mi-17 family of helicopters made by
+                        erstwhile Soviet and now Russian Mil Helicopter Company. The Medium Lift Helicopter is used for
+                        VVIP movement, SAR (Search and Rescue Operations) and logistic support.</p>
+                </div>
+                <div class="sec fighelis">
+                    <h4> Boeing Apache AH-64E</h4>
+                    <br>
+                    <img src="../image/Apache-Guardian-Attack-Helicopter.webp">
+                    <br>
+                    <p>India recently inducted the globally renowned attack helicopters to the IAF. Known as the world’s
+                        most advanced multi-role combat helicopter, the AH-64E is made by Boeing Defence and is known
+                        for its attack capabilities in modern day warfare. It is also used for missions including
+                        reconnaissance, security, peacekeeping operations, and most prominently, as an attack chopper.
+                    </p>
+                </div>
+                <div class="thi fighelis">
+                    <h4> Boeing Chinook</h4>
+                    <br>
+                    <img src="../image/chinook.jpg">
+                    <br>
+                    <p> Apart from Apache, the IAF Air Force also inducted Boeing-made CH-47F (I) better known as
+                        Chinook for the heavy heli-lift capability. The CH-47 Chinook provides strategic airlift capability and gets advanced
+                        cargo-handling capabilities that enhance the aircraft's mission performance and handling
+                        characteristics.</p>
+                </div>
+                <div class="for fighelis">
+                    <h4> HAL Cheetah </h4>
+                    <br>
+                    <img src="../image/4.-Cheetah_ABagai-1024x683.jpg">
+                    <br>
+                    <p> The Cheetah is based on Aérospatiale SA 315B Lama French single-engined helicopter and is made by HAL in India. It is being deployed in the
+                        high altitude regions of J&K, HP and Uttrakhand and is the backbone for SAR, Casualty Evacuation
+                        and RTR (Route Transport Role) activities. It can carry 3 passengers or 100 kg external sling
+                        loads.</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

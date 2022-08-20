@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian_Navy</title>
+    <link href='https://fonts.googleapis.com/css?family=Metal Mania' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rakkas' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Gemunu Libre' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        @media screen and (min-width:1400px){
+
+        
+        .back{
+            width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -20;
+    background: #ffffff;
+    color: #09203f;
+    text-shadow: 0px 0px 9px cornflowerblue;
+        }
+        .back h1{
+            text-align: center;
+    font-size: 70px;
+    /* top: 50px; */
+    padding-top: 120px;
+    font-family: 'Metal Mania';
+        }
+        .back p{
+            font-size: 20px;
+    padding: 50px 150px;
+    text-align: center;
+    font-family: 'Rakkas';
+    
+        }
+        .details{
+            position: relative;
+    top: 550px;
+    height: 3050px;
+    background: linear-gradient(50deg,#09203f,#537895);
+    color: white;
+    border-radius: 50% 50% 0 0/ 3% 3% 0 0;
+        }
+.details h1{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Galada';
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(255, 255,255,0.5);
+}
+.details h4 {
+            padding-top: 15px;
+            font-family: 'Alegreya SC';
+            font-size: 25px;
+            color: #ffffff;
+        }
+
+        .details p {
+            font-family: 'Gemunu Libre';
+            font-size: 15px;
+            padding: 0px 40px;
+            color: #ffffff;
+        }
+        .details img{
+            width: 550px;
+            height: 350px;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            box-shadow: 0px 5px 15px #0000008a;
+        }
+
+        .armyguns{
+        width: 630px;
+            margin-top: 70px;
+            background-color: rgba(255, 255,255,0.2); 
+             backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 10px;
+    }
+        
+        .guns{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .tanks{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .artanks{
+        width: 630px;
+            margin-top: 100px;
+            background-color: rgba(255, 255,255,0.2); 
+             backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 10px;
+    }
+    .container a i{
+            margin-left: 40px;
+    margin-top: 30px;
+    width: 40px;
+        }
+    }
+    @media (max-width:1400px) and (min-width:1100px){
+        .back{
+            width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -20;
+    background: #ffffff;
+    color: #09203f;
+    text-shadow: 0px 0px 9px cornflowerblue;
+        }
+        .back h1{
+            text-align: center;
+    font-size: 65px;
+    /* top: 50px; */
+    padding-top: 90px;
+    font-family: 'Metal Mania';
+        }
+        .back p{
+            font-size: 20px;
+    padding: 50px 150px;
+    text-align: center;
+    font-family: 'Rakkas';
+    
+        }
+        .details{
+            position: relative;
+    top: 550px;
+    height: 100%;
+    background: linear-gradient(50deg,#09203f,#537895);
+    color: white;
+    border-radius: 50% 50% 0 0/ 3% 3% 0 0;
+    padding-bottom: 50px;
+        }
+.details h1{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Galada';
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(255, 255,255,0.5);
+}
+.details h4 {
+            padding-top: 15px;
+            font-family: 'Alegreya SC';
+            font-size: 25px;
+            color: #ffffff;
+        }
+
+        .details p {
+            font-family: 'Gemunu Libre';
+            font-size: 15px;
+            padding: 0px 40px;
+            color: #ffffff;
+        }
+        .details img{
+            width: 550px;
+            height: 350px;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            box-shadow: 0px 5px 15px #0000008a;
+        }
+
+        .armyguns{
+        width: 630px;
+            margin-top: 70px;
+            background-color: rgba(255, 255,255,0.2); 
+             backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 10px;
+    }
+        
+        .guns{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .tanks{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .artanks{
+        width: 630px;
+            margin-top: 100px;
+            background-color: rgba(255, 255,255,0.2); 
+             backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 32px;
+            text-align: center;
+            padding-bottom: 10px;
+    }
+    .container a i{
+            margin-left: 40px;
+    margin-top: 30px;
+    width: 40px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <a href="../index.html" style="text-decoration: none;"><i class="fa-solid fa-house" style="color:#09203f;" ></i></a>
+        <div class="back">
+    <h1>INDIAN NAVY</h1>
+    <div>
+        <p>The Indian Navy is the naval branch of the Indian Armed Forces. The President of India is the Supreme
+            Commander of the Indian Navy. The Chief of Naval Staff, a four-star admiral, commands the navy.
+
+            The primary objective of the navy is to safeguard the nation's maritime borders, and in conjunction with
+            other Armed Forces of the union, act to deter or defeat any threats or aggression against the territory,
+            people or maritime interests of India, both in war and peace.
+
+            As of June 2019, Indian Navy has 67,252 active and 75,000 reserve personnel in service and has a fleet of
+            150 ships and submarines, and 300 aircraft.As of April 2022, the operational fleet consists of 1
+            active aircraft carrier and 1 amphibious transport dock, 8 landing ship tanks, 10 destroyers, 13 frigates, 1
+            ballistic missile submarine, 16 conventionally-powered attack submarines, 24 corvettes, one mine
+            countermeasure vessel, 4 fleet tankers and numerous other auxiliary vessels, small patrol boats and
+            sophisticated ships. It is considered as a multi-regional power projection blue-water navy.</p>
+
+    </div>
+</div>
+<section>
+    <div class="details">
+        <h1>Glory</h1>
+        <div class="guns">
+            <div class="first armyguns">
+                
+                    <h4> INS Vikrant</h4>
+                    <br>
+                    <img src="../image/ins-vikrant.jpg">
+                    <br>
+<p>INS Vikrant is an aircraft carrier constructed by the Cochin Shipyard Limited (CSL) for the Indian Navy. It is the first aircraft carrier to be built in India. It is named 'Vikrant' as a tribute to India's first aircraft carrier, Vikrant. The name Vikrant means "courageous".
+                </p>
+            </div>
+            <div class="second armyguns">
+                
+                    <h4> INS Vikramaditya</h4>
+                    <br>
+                    <img src="../image/vikramaditya.jpg">
+                    <br>
+                    <p>
+                        INS Vikramaditya is a modified Kiev-class aircraft carrier purchased by India from Russia in 2013 under a $2.3 billion deal, and it was renamed in honour of Vikramaditya, the legendary emperor.
+
+                        The Russian-origin ship is often called a floating airfield. 
+                </p>
+            </div>
+            <div class="third armyguns">
+               
+                    <h4> INS Talwar</h4>
+                    <br>
+                    <img src="../image/INS_Talwar_(F40)_6468689.jpg">
+                    <br>
+                    <p>
+                        INS Talwar is the lead ship of the Talwar-class frigates of the Indian Navy. Its name means "Sword". She was built in Russia, and commissioned into the Indian Navy on 18 June 2003.
+                </p>
+            </div>
+            <div class="fourth armyguns">
+             
+                    <h4> INS Airawat</h4>
+                    <br>
+                    <img src="../image/INSairavat.jpg">
+                    <br>
+                    <p>
+                        INS Airavat is the third Shardul-class amphibious warfare vessel of the Indian Navy.It was built by Garden Reach Shipbuilders & Engineers in Kolkata at Yard 2016.
+                </p>
+            </div>
+            <div class="fifth armyguns">
+                
+                    <h4> INS Pralay</h4>
+                    <br>
+                    <img src="../image/Indian_Naval_Ship_Pralaya_1200x768.webp">
+                    <br>
+                    <p>
+                        INS Pralaya, the fourth missile vessel and second ship of Prabal class, built by Goa Shipyard Ltd (GSL).
+
+                        
+                </p>
+            </div>
+            <div class="sixth armyguns">
+               
+                    <h4> INS Vishakhapatnam</h4>
+                    <br>
+                    <img src="../image/visakhapatnamship.jpg">
+                    <br>
+                    <p>
+                    Visakhapatnam was laid down on 12 October 2013 and she was launched on 20 April 2015 at Mazagon Dock Limited of Mumbai. This was made under Make In India initiative.
+                </p>
+            </div>
+            </div>
+        <div class="tanks">
+            <div class="ftan artanks">
+                <h4> INS Kalvari</h4>
+                <br>
+                <img src="../image/INS_Kalvari_(S21)_at_sea.jpg">
+                <br>
+                <p>INS Kalvari was the lead vessel of the Kalvari class of diesel-electric submarines of the Indian Navy. It was the first ever submarine inducted into service by the Indian Navy.</p>
+            
+            </div>
+            <div class="stan artanks">
+                <h4> INS Shishumar</h4>
+                <br>
+                <img src="../image/shishumar.webp">
+                <br>
+                <p>The Shishumar-class vessels are diesel-electric attack submarines, currently in active service with the Indian Navy. </p>
+            
+            </div>
+            <div class="ttan artanks">
+                <h4> INS Sindhuvijay</h4>
+                <br>
+                <img src="../image/Defence-INS_Sindhuvijay_1200x768.webp">
+                <br>
+                <p>INS Sindhuvijay (S62) is a Sindhughosh-class diesel-electric submarine of the Indian Navy.</p>
+            
+            </div>
+            <div class="ftan artanks">
+                <h4> INS Arihant</h4>
+                <br>
+                <img src="../image/ARIHANT-1-1024x683.jpg">
+                <br>
+                <p>INS Arihant, designated Strategic Strike Nuclear Submarine, is the lead ship of India's Arihant class of nuclear-powered ballistic missile submarines.</p>
+            
+            </div>
+            
+        </div>
+    </section>
+    </div>
+</div>
+</body>
+
+</html>
